@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+#home,
+#about,
+#skills,
+#projects,
+#education,
+#contact{
+    scroll-margin-top:75px;
+}
+.scroll-top{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:50px;
+    height:50px;
+    background:#2563EB;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+    z-index:1000;
+}
+
+.scroll-top:hover{
+    background:#1D4ED8;
+    transform:translateY(-5px);
+}
+
+/* Responsive Styles for App globally */
+@media (max-width: 768px) {
+    .scroll-top {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        right: 15px;
+        bottom: 15px;
+    }
+}

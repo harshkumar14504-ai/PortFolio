@@ -1,0 +1,166 @@
+.hero{
+    width:100%;
+    min-height:auto;
+    display:flex;
+    justify-content:space-between;
+     align-items:center;   
+     padding:40px 80px 40px;
+    font-family: 'Poppins', sans-serif;
+    background: #EFF6FF;
+   
+
+}
+
+/* LEFT */
+
+.hero-left {
+    width: 50%;
+}
+
+.hero-left p:first-child {
+    font-size: 22px;
+    color: #6b7280;
+    margin-bottom: 10px;
+}
+
+.hero-left h1 {
+    font-size: 64px;
+    color: #111827;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-left h2 {
+    font-size: 36px;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+.hero-left p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #4b5563;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+/* BUTTONS */
+
+.hero-btns {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-btns button {
+    padding: 14px 30px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* Resume Button */
+
+.hero-btns button:first-child {
+    background: #2563eb;
+    color: white;
+    border: none;
+}
+
+.hero-btns button:first-child:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(37,99,235,.3);
+}
+
+/* Project Button */
+
+.hero-btns button:last-child {
+    background: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+}
+
+.hero-btns button:last-child:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* RIGHT */
+
+.hero-right {
+    width: 50%;
+    display: flex;
+       justify-content: center; 
+    align-items: center;
+    padding-top: 50px;
+   
+}
+
+.hero-right img {
+    width: 600px;
+    max-width: 100%;
+    transition: .4s;
+ 
+ 
+}
+
+.hero-right img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Styles for Hero Section */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 40px 40px;
+    }
+    .hero-left h1 {
+        font-size: 48px;
+    }
+    .hero-left h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .hero-left, .hero-right {
+        width: 100%;
+    }
+    .hero-right {
+        padding-top: 0;
+        margin-bottom: 30px;
+    }
+    .hero-left p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-btns {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-left h1 {
+        font-size: 36px;
+    }
+    .hero-left h2 {
+        font-size: 22px;
+    }
+    .hero-left p {
+        font-size: 16px;
+    }
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero-btns button {
+        width: 100%;
+    }
+}
