@@ -1,6 +1,6 @@
  import "../styles/Home.css";
  import developer from "../assets/images/developer.png";
- import resume from "../assets/resume/HarshKumar_CV_Final.pdf";
+ import resume from "../assets/resume/HARSH_KUMAR_MERN_CV.pdf";
   export default function Home(){
      return ( <>
 
